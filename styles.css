@@ -274,3 +274,26 @@ table {
     content: '▼';
     margin-left: 8px;
 }
+
+.formulario {
+    display: inline-block;
+    background-color: #e6f0fa; /* fondo suave */
+    border: 2px solid #0057a0; /* borde azul definido */
+    color: #0057a0;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin: 20px auto;
+    font-size: 16px;
+    text-align: center;
+}
+
+.formulario:hover {
+    background-color: #003f75;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
