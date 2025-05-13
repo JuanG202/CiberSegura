@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Seguridad TI</title>
+</head>  
+<body> 
+    <div class="header">  
+        <h2>TEMAS DE CIBERSEGURIDAD TI</h2>
+        
+        <!-- Sección de Temas por Meses con Acordeón CORREGIDA -->
+        <div class="meses-container">
+            <!-- Mayo -->
+            <div class="mes-item-container">
+                <button class="mes-btn" onclick="toggleTemas('mayo')">
+                    Temas de Mayo
+                    <span class="mes-flecha">▼</span>
+                </button>
+                <div class="botones-container" id="mayo" style="display:none;">
+                    <a href="./tarjeta.html" class="boton-tema">Phishing</a>
+                    <a href="./password.html" class="boton-tema">Contraseñas seguras</a>
+                </div>
+            </div>
+            
+            <!-- Junio -->
+            <div class="mes-item-container">
+                <button class="mes-btn" onclick="toggleTemas('junio')">
+                    Temas de Junio
+                    <span class="mes-flecha">▼</span>
+                </button>
+                <div class="botones-container" id="junio" style="display:none;">
+                    <a href="./enlaces.html" class="boton-tema">Enlaces y archivos sospechosos</a>
+                    <a href="./seguro.html" class="boton-tema">Uso seguro del correo electrónico</a>
+                    <a href="./redes.html" class="boton-tema"> Redes Wifi publicas y VPN</a>
+                    <a href="./dispositivo.html" class="boton-tema">Seguridad en Dispositivos Móviles Corporativos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+        <div class="content">  
+        <h2>¡Hola Equipo😁!</h2>
+        <p>Esta semana aprenderemos sobre <strong>Seguridad en Dispositivos Móviles Corporativos</strong>. ¡Mantente alerta!</p>
+        
+        <h2>📱 Seguridad en Dispositivos Móviles: Bloqueo y Apps Seguras</h2>
+
+        <p>Los smartphones contienen información crítica (bancos, redes sociales, fotos).
+          <strong>Protegerlos evita robos, hackeos y fraudes.</strong> Aquí te explicamos cómo hacerlo.</p>
+
+        <h2>🔒 1. Bloqueo de Pantalla: PIN, Patrón o Biometría</h2>
+
+        <p>¿Por qué activarlo?</p>
+        <ul>
+            <li>Si pierdes o te roban el móvil, nadie podrá acceder a tus datos.</li>
+            <li>Evita que instalen malware o roben información en segundos.</li>
+        </ul>
+        <p> <strong>Opciones de desbloqueo (de más a menos seguras):</strong></p>
+        <ol>
+            <li>🔑 Contraseña alfanumérica (ej: Móvil#2024!).</li>
+            <li>🖐️ Huella dactilar/reconocimiento facial (biometría).</li>
+            <li>🔢 PIN de 6 dígitos (mejor que 4).</li>
+            <li>📱 Patrón (evita los comunes como "Z" o "L").</li>
+        </ol>
+        <p>❌ Errores comunes:</p>
+        <ul>
+            <li>Usar patrones simples (└─ o □) o PINs obvios (1234, 0000).</li>
+            <li>Desactivar el bloqueo "por comodidad".</li>
+        </ul>
+        <p>✅ Buenas prácticas:</p>
+        <ul>
+            <p>✔ Usa un PIN de al menos 6 dígitos (nunca tu cumpleaños).</p>
+        </ul>
+
+        <h2>📲 No instalar apps de fuentes no oficiales</h2>
+        <p>
+            <p>Riesgos de descargar APKs o apps pirata:</p>
+            <ul>
+                <li>Malware oculto: Roban contraseñas, minan criptomonedas o espían tu micrófono.</li>
+                <li>Actualizaciones falsas: Ejemplo: un "WhatsApp Plus" que instala spyware.</li>
+                <li>Pérdida de garantía: Algunos fabricantes anulan la garantía si usas apps no verificadas.</li>
+            </ul>
+        </p>
+
+        <h2>📌 Ejemplos de apps peligrosas:</h2>
+        <table>
+                    <thead>
+                      <tr>
+                        <th>Tipo</th>
+                        <th>App Legitima</th>
+                        <th>App Fraudulenta</th>
+                        <th>Riesgo</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>WhatsApp</td>
+                        <td>WhatsApp (Play Store)</td>
+                        <td>WhatsApp "Gold" o "Plus"</td>
+                        <td>Robo de mensajes</td>
+                      </tr>
+                      <tr>
+                        <td>Juegos</td>
+                        <td>Minecraft (oficial)</td>
+                        <td>APK de "Minecraft gratis"</td>
+                        <td>Virus en el dispositivo</td>
+                      </tr>
+                      <tr>
+                        <td>Finanzas</td>
+                        <td>Banco Real (oficial)</td>
+                        <td>"Actualización de Banco"</td>
+                        <td>Phishing bancario</td>
+                      </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+        <h2>✅ Cómo descargar apps de forma segura:</h2>
+        <ol>
+            <li>Solo usa tiendas oficiales: Google Play Store (Android) o App Store (iPhone).</li>
+            <li>Revisa los permisos: Si un "linterna" pide acceso a tus contactos, desinstálala.</li>
+            <li>Lee reseñas y desarrollador: Busca "Google LLC" en Gmail, no "Google Services Inc".</li>
+            <li>Mantén actualizado tu SO: Parches de seguridad arreglan vulnerabilidades.</li>
+        </ol>
+        <h2>📋 Comparación: Dispositivo Protegido vs. Vulnerable</h2>
+         <table>
+                    <thead>
+                      <tr>
+                        <th>Situación</th>
+                        <th>✅ Seguro</th>
+                        <th>❌ Inseguro</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Bloqueo de pantalla	</td>
+                        <td>Huella + PIN de 6 dígitos</td>
+                        <td>Sin bloqueo o patrón fácil ("L")</td>
+                      </tr>
+                      <tr>
+                        <td>Origen de las apps</td>
+                        <td>Solo Play Store/App Store</td>
+                        <td>APKs de Telegram o webs pirata</td>
+                      </tr>
+                      <tr>
+                        <td>Permisos de apps</td>
+                        <td>Solo los necesarios (ej: cámara)</td>
+                        <td>Apps que piden contactos y ubicación sin razón</td>
+                      </tr>
+                        <tr>
+                        <td>Actualizaciones</td>
+                        <td>Sistema y apps al día</td>
+                        <td>Android 8 sin parches desde 2020</td>
+                      </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                   <h3>🚨 ¿Qué hacer si instalaste una app maliciosa?</h3>
+
+                   <ol>
+                    <li>Desinstálala inmediatamente.</li>
+                    <li>Cambia todas tus contraseñas (en otro dispositivo seguro).</li>
+                    <li>Revoca permisos sospechosos en Ajustes > Apps.</li>
+                   </ol>
+
+                <h2>💡 Consejos </h2>
+            <ul>
+                <li>Usa carpetas seguras (Android: Secure Folder / iPhone: Apps ocultas).</li>
+                <li>Habilita "Encontrar mi dispositivo" (Google Find My Device o iCloud).</li>
+                <li>No rootear/jailbreak: Pierdes seguridad y actualizaciones oficiales.</li>
+            </ul>
+            <h3>📢 Recuerda:</h3>  
+        <p>Si sospechas de un correo, <a href="mailto:sistemas@lastra.com.co" target="_blank">repórtalo aquí</a>.</p>  
+    </div> 
+            </div> 
+    <div class="footer">  
+        <p>© 2025 [REPRESENTACIONES LASTRA SAS]. Todos los derechos reservados. Create by Juan Pablo Granja</p>  
+        <p><a href="#">Política de seguridad</a> | <a href="https://wa.me/3188846786" target="_blank">Contactar al area de TI</a></p>  
+    </div> 
+    <script>
+        function toggleTemas(mes) {
+            const temas = document.getElementById(mes);
+            const btn = document.querySelector(`.mes-btn[onclick="toggleTemas('${mes}')"]`);
+            
+            // Cerrar todos los demás acordeones
+            document.querySelectorAll('.botones-container').forEach(container => {
+                if (container.id !== mes) {
+                    container.style.display = 'none';
+                    const otherBtn = document.querySelector(`.mes-btn[onclick*="${container.id}"]`);
+                    otherBtn.classList.remove('active');
+                    otherBtn.querySelector('.mes-flecha').textContent = '▼';
+                }
+            });
+            
+            // Alternar el actual
+            if (temas.style.display === 'none' || !temas.style.display) {
+                temas.style.display = 'flex';
+                btn.classList.add('active');
+                btn.querySelector('.mes-flecha').textContent = '▲';
+            } else {
+                temas.style.display = 'none';
+                btn.classList.remove('active');
+                btn.querySelector('.mes-flecha').textContent = '▼';
+            }
+        }
+    </script>   
+</body>
+</html>

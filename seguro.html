@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Seguridad TI</title>
+</head> 
+<body>
+    <div class="header">  
+        <h2>TEMAS DE CIBERSEGURIDAD TI</h2>
+        
+        <!-- Sección de Temas por Meses con Acordeón CORREGIDA -->
+        <div class="meses-container">
+            <!-- Mayo -->
+            <div class="mes-item-container">
+                <button class="mes-btn" onclick="toggleTemas('mayo')">
+                    Temas de Mayo
+                    <span class="mes-flecha">▼</span>
+                </button>
+                <div class="botones-container" id="mayo" style="display:none;">
+                    <a href="./tarjeta.html" class="boton-tema">Phishing</a>
+                    <a href="./password.html" class="boton-tema">Contraseñas seguras</a>
+                </div>
+            </div>
+            
+            <!-- Junio -->
+            <div class="mes-item-container">
+                <button class="mes-btn" onclick="toggleTemas('junio')">
+                    Temas de Junio
+                    <span class="mes-flecha">▼</span>
+                </button>
+                <div class="botones-container" id="junio" style="display:none;">
+                    <a href="./enlaces.html" class="boton-tema">Enlaces y archivos sospechosos</a>
+                    <a href="./seguro.html" class="boton-tema">Uso seguro del correo electrónico</a>
+                    <a href="./redes.html" class="boton-tema"> Redes Wifi publicas y VPN</a>
+                    <a href="./dispositivo.html" class="boton-tema">Seguridad en Dispositivos Móviles Corporativos</a>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="content">  
+        <h2>¡Hola Equipo😁!</h2>  
+        <p>Esta semana aprenderemos sobre <strong>Uso seguro del correo electrónico</strong>. ¡Mantente alerta!</p>
+        
+        <h2>📧 Uso seguro del correo electrónico: Evita compartir información sensible</h2>
+
+        <p>El correo electrónico es una de las principales vías de ataques cibernéticos (phishing, malware, robo de identidad). 
+        Aprende a proteger tu información y evitar riesgos.</p> <br>
+
+        <h2>🚫 ¿Qué información NUNCA debes compartir por email?</h2>
+        <p>
+            <p> <strong>Los ciberdelincuentes pueden interceptar correos o hackear cuentas. Evita enviar:</strong></p>
+
+            <p>🔴 Contraseñas (ni siquiera a familiares o compañeros de trabajo).</p>
+            <p>🔴 Números de tarjetas de crédito o datos bancarios (CVV, PIN).</p>
+            <p>🔴 Documentos personales (DNI, pasaporte, licencia de conducir).</p>
+            <p>🔴 Información médica (historiales, recetas, examenes).</p>
+            <p>🔴 Claves de acceso (códigos 2FA, tokens de seguridad).</p>
+        </p>
+        <h2>📌 Ejemplos de malas prácticas vs. alternativas seguras</h2>
+                <table>
+                    <thead>
+                      <tr>
+                        <th>Situación</th>
+                        <th>❌ Incorrecto</th>
+                        <th>✅ Correcto</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Compartir contraseña</td>
+                        <td>Enviar por email: "Mi clave es ABC123"</td>
+                        <td>Usar un gestor de contraseñas (Bitwarden) o compartirla en persona.</td>
+                      </tr>
+                      <tr>
+                        <td>Enviar datos bancarios</td>
+                        <td>Adjuntar una foto de la tarjeta.</td>
+                        <td>Usar plataformas seguras (banca online) o servicios cifrados (Signal).</td>
+                      </tr>
+                      <tr>
+                        <td>Documentos sensibles</td>
+                        <td>Mandar el DNI escaneado sin protección.</td>
+                        <td>Subirlo a una nube con cifrado y enlace temporal.</td>
+                      </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                  <h2>🔍 ¿Cómo identificar un correo inseguro?</h2>
+
+                  <p> <strong>Señales de alerta en un email</strong></p>
+                  <ol>
+                    <li>Remitente desconocido o imitando a una empresa (ej: soporte@apple-support.com en lugar de @apple.com).</li>
+                    <li>Solicitud de información personal ("Confirme su cuenta enviando su DNI").</li>
+                    <li>Archivos adjuntos inesperados (.exe, .zip, .scr).</li>
+                    <li>Enlaces acortados o que no coinciden (ej: texto dice "Banco Santander" pero el link lleva a b4nco-fake.com).</li>
+                  </ol>
+                  <p>Ejemplo de correo fraudulento</p>
+                  <p>📩 "Estimado cliente, su cuenta de PayPal ha sido bloqueada. Haga clic <a href="https://paypal-actualizar.com/">aquí</a> para verificar sus datos."</p>
+                  <p>🔴 <strong>¿Por qué es peligroso?</strong></p>
+                  <li>El dominio no es paypal.com.</li>
+                  <li>Intenta robar credenciales con un enlace falso.</li>
+
+                  <h2>🛡️ Buenas prácticas para un email seguro</h2>
+                  <ol>
+                    <li>Usa cifrado (PGP o correos encriptados)</li>
+                    <ul><li>Herramientas como ProtonMail o Tutanota cifran automáticamente el contenido.</li></ul>
+
+                    <li>Verifica antes de responder o descargar</li>
+                    <ul><li>¿Conoces al remitente? ¿Esperabas ese archivo o enlace?</li></ul>
+
+                    <li>No uses el correo para comunicaciones críticas</li>
+                    <p>Alternativas más seguras:</p>
+                    <ul><li>Mensajería cifrada (Signal, WhatsApp con verificación de dos pasos).</li></ul>
+                    <ul><li>Plataformas empresariales (Slack, Microsoft Teams).</li></ul>
+
+                    <li>Borra correos con información sensible</li>
+                    <ul><li>Elimina mensajes antiguos con datos personales o financieros.</li></ul>               
+                  </ol>
+
+                  <h2>📋 Comparación: Correo seguro vs. inseguro</h2>
+                <table>
+                    <thead>
+                      <tr>
+                        <th>Aspecto</th>
+                        <th>✅ Correcto</th>
+                        <th>❌ Incorrecto</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Remitente</td>
+                        <td>Dirección oficial (ej: @google.com)</td>
+                        <td>Dominio falso (ej: @g00gle-support.com)</td>
+                      </tr>
+                      <tr>
+                        <td>Adjuntos</td>
+                        <td>Archivos esperados (PDF, DOCX)</td>
+                        <td>Ejecutables (.exe) o macros (.docm)</td>
+                      </tr>
+                      <tr>
+                        <td>Enlaces</td>
+                        <td>URLs claras (ej: https://mibancoreal.com/login)</td>
+                        <td>Enlaces acortados o con errores</td>
+                      </tr>
+                      <tr>
+                        <td>Lenguaje</td>
+                        <td>Profesional, sin urgencia falsa</td>
+                        <td>Mensajes alarmistas ("¡ACTÚE AHORA!")</td>
+                      </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <h3>🚨 ¿Qué hacer si enviaste información sensible por error?</h3>
+                  <ol>
+                    <li>Cambia tus contraseñas inmediatamente.</li>
+                    <li>Habilita 2FA en todas tus cuentas.</li>
+                    <li>Alerta al destinatario (si era legítimo) para que borre el correo.</li>
+                    <li>Reporta el incidente si fue un engaño (<a href="mailto:sistemas@lastra.com.co" target="_blank">sistemas@lastra.com.co</a> en Colombia).</li>
+                  </ol>
+                  <div class="tip">  
+            <h2>🔐 Consejos Clave para un Uso Seguro del Correo Electrónico</h2>  
+            <ul>  
+                <li>✉️ Verifica SIEMPRE al remitente.</li>  
+                <li>🔗 No hagas clic en enlaces directamente</li>  
+                <li>📎 Evita descargar archivos adjuntos inesperados</li>
+                <li>🚫 NUNCA compartas información sensible por email</li>
+                <li>🚨 Desconfía de correos urgentes o con premios</li>
+            </ul>  
+        </div> 
+        <h3>📢 Recuerda:</h3>  
+        <p>Si sospechas de un correo, <a href="mailto:sistemas@lastra.com.co" target="_blank">repórtalo aquí</a>.</p>  
+    </div>  
+    <div class="footer">  
+        <p>© 2025 [REPRESENTACIONES LASTRA SAS]. Todos los derechos reservados. Create by Juan Pablo Granja</p>  
+        <p><a href="#">Política de seguridad</a> | <a href="https://wa.me/3188846786" target="_blank">Contactar al area de TI</a></p>  
+    </div> 
+     <script>
+        function toggleTemas(mes) {
+            const temas = document.getElementById(mes);
+            const btn = document.querySelector(`.mes-btn[onclick="toggleTemas('${mes}')"]`);
+            
+            // Cerrar todos los demás acordeones
+            document.querySelectorAll('.botones-container').forEach(container => {
+                if (container.id !== mes) {
+                    container.style.display = 'none';
+                    const otherBtn = document.querySelector(`.mes-btn[onclick*="${container.id}"]`);
+                    otherBtn.classList.remove('active');
+                    otherBtn.querySelector('.mes-flecha').textContent = '▼';
+                }
+            });
+            
+            // Alternar el actual
+            if (temas.style.display === 'none' || !temas.style.display) {
+                temas.style.display = 'flex';
+                btn.classList.add('active');
+                btn.querySelector('.mes-flecha').textContent = '▲';
+            } else {
+                temas.style.display = 'none';
+                btn.classList.remove('active');
+                btn.querySelector('.mes-flecha').textContent = '▼';
+            }
+        }
+    </script> 
+</body>
+</html>

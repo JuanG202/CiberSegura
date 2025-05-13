@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Seguridad TI</title>
+</head>  
+<body>  
+    <div class="header">  
+        <h2>TEMAS DE CIBERSEGURIDAD TI</h2>
+        
+        <!-- Sección de Temas por Meses con Acordeón CORREGIDA -->
+        <div class="meses-container">
+            <!-- Mayo -->
+            <div class="mes-item-container">
+                <button class="mes-btn" onclick="toggleTemas('mayo')">
+                    Temas de Mayo
+                    <span class="mes-flecha">▼</span>
+                </button>
+                <div class="botones-container" id="mayo" style="display:none;">
+                    <a href="./tarjeta.html" class="boton-tema">Phishing</a>
+                    <a href="./password.html" class="boton-tema">Contraseñas seguras</a>
+                </div>
+            </div>
+            
+            <!-- Junio -->
+            <div class="mes-item-container">
+                <button class="mes-btn" onclick="toggleTemas('junio')">
+                    Temas de Junio
+                    <span class="mes-flecha">▼</span>
+                </button>
+                <div class="botones-container" id="junio" style="display:none;">
+                    <a href="./enlaces.html" class="boton-tema">Enlaces y archivos sospechosos</a>
+                    <a href="./seguro.html" class="boton-tema">Uso seguro del correo electrónico</a>
+                    <a href="./redes.html" class="boton-tema"> Redes Wifi publicas y VPN</a>
+                    <a href="./dispositivo.html" class="boton-tema">Seguridad en Dispositivos Móviles Corporativos</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <div class="content">  
+        <h2>¡Hola Equipo😁!</h2>  
+        <p>Esta semana aprenderemos sobre <strong>Phishing</strong>. ¡Mantente alerta!</p>
+        
+        <h2>¿Qué es Phishing?🤔</h2>
+        <p>El phishing es un tipo de ciberataque en el que los delincuentes intentan engañar a las víctimas 
+            para que revelen información confidencial, como contraseñas, datos bancarios o números de tarjetas de crédito, 
+            mediante correos electrónicos, mensajes o sitios web falsos.</p> <br>
+        
+        <h2>Como identificar un intento de phishing</h2>
+        <ol>
+            <li><strong>Remitente sospechoso</strong></li>
+            <p>Verifica la dirección de correo del remitente. 
+                A menudo, los atacantes usan dominios que imitan a empresas legítimas 
+                (ejemplo: servici0-cliente@bancoo.com en lugar de servicio-cliente@banco.com).</p>
+            
+            <li><strong>Urgencia o amenaza</strong></li>
+            <p>Mensajes que exigen acción inmediata ("Su cuenta será suspendida si no actúa ahora"). 
+                Las empresas reales no presionan de esta manera.</p>
+            
+            <li><strong>Enlaces falsos</strong></li>
+            <p>Pasa el cursor sobre los enlaces (sin hacer clic) para ver la URL real. 
+                Si no coincide con el sitio oficial, es una señal de alerta.</p>
+            
+            <li><strong>Errores gramaticales y ortográficos</strong></li>
+            <p>Los correos fraudulentos suelen contener faltas de ortografía o redacción poco profesional.</p>
+
+            <li><strong>Archivos adjuntos inesperados</strong></li>
+            <p>No descargues archivos adjuntos de remitentes desconocidos, ya que pueden contener malware.</p>
+
+            <li><strong>Solicitud de información personal</strong></li>
+            <p>Ninguna empresa legítima te pedirá contraseñas, números de tarjeta o datos sensibles por correo.</p>
+        </ol>
+
+        <div class="tip">  
+            <h2>😇 CONSEJOS</h2>  
+            <ul>  
+                <li>No hagas clic en enlaces sospechosos.</li>  
+                <li>Verifica directamente en la página oficial (no desde el correo).</li>  
+                <li>Habilita la autenticación en dos pasos (2FA) en tus cuentas importantes.</li>
+            </ul>  
+            <p>Si sospechas que has sido víctima de phishing, cambia tus contraseñas y contacta al área de TI de inmediato.</p>
+        </div>  
+
+        <h3>🚨 Ejemplo de ataque vía correo:</h3>  
+        <img 
+            src="./assest/prev1.jpg"
+            alt="Ejemplo de correo phishing"
+            id="phishingPreview"
+            class="img_phishing"
+        />
+
+        <h3>📢 Recuerda:</h3>  
+        <p>Si sospechas de un correo, <a href="mailto:sistemas@lastra.com.co" target="_blank">repórtalo aquí</a>.</p>  
+    </div>  
+    
+    <div class="footer">  
+        <p>© 2025 REPRESENTACIONES LASTRA SAS. Todos los derechos reservados. Create by Juan Pablo Granja</p>  
+        <p><a href="#">Política de seguridad</a> | <a href="https://wa.me/3188846786" target="_blank">Contactar al área de TI</a></p>  
+    </div>  
+
+    <script>
+        function toggleTemas(mes) {
+            const temas = document.getElementById(mes);
+            const btn = document.querySelector(`.mes-btn[onclick="toggleTemas('${mes}')"]`);
+            
+            // Cerrar todos los demás acordeones
+            document.querySelectorAll('.botones-container').forEach(container => {
+                if (container.id !== mes) {
+                    container.style.display = 'none';
+                    const otherBtn = document.querySelector(`.mes-btn[onclick*="${container.id}"]`);
+                    otherBtn.classList.remove('active');
+                    otherBtn.querySelector('.mes-flecha').textContent = '▼';
+                }
+            });
+            
+            // Alternar el actual
+            if (temas.style.display === 'none' || !temas.style.display) {
+                temas.style.display = 'flex';
+                btn.classList.add('active');
+                btn.querySelector('.mes-flecha').textContent = '▲';
+            } else {
+                temas.style.display = 'none';
+                btn.classList.remove('active');
+                btn.querySelector('.mes-flecha').textContent = '▼';
+            }
+        }
+    </script>
+</body>  
+</html>

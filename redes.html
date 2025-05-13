@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Seguridad TI</title>
+</head>  
+<body> 
+    <div class="header">  
+        <h2>TEMAS DE CIBERSEGURIDAD TI</h2>
+        
+        <!-- Sección de Temas por Meses con Acordeón CORREGIDA -->
+        <div class="meses-container">
+            <!-- Mayo -->
+            <div class="mes-item-container">
+                <button class="mes-btn" onclick="toggleTemas('mayo')">
+                    Temas de Mayo
+                    <span class="mes-flecha">▼</span>
+                </button>
+                <div class="botones-container" id="mayo" style="display:none;">
+                    <a href="./tarjeta.html" class="boton-tema">Phishing</a>
+                    <a href="./password.html" class="boton-tema">Contraseñas seguras</a>
+                </div>
+            </div>
+            
+            <!-- Junio -->
+            <div class="mes-item-container">
+                <button class="mes-btn" onclick="toggleTemas('junio')">
+                    Temas de Junio
+                    <span class="mes-flecha">▼</span>
+                </button>
+                <div class="botones-container" id="junio" style="display:none;">
+                    <a href="./enlaces.html" class="boton-tema">Enlaces y archivos sospechosos</a>
+                    <a href="./seguro.html" class="boton-tema">Uso seguro del correo electrónico</a>
+                    <a href="./redes.html" class="boton-tema"> Redes Wifi publicas y VPN</a>
+                    <a href="./dispositivo.html" class="boton-tema">Seguridad en Dispositivos Móviles Corporativos</a>
+                </div>
+            </div>
+        </div> 
+    </div>
+        <div class="content">  
+        <h2>¡Hola Equipo😁!</h2>
+        <p>Esta semana aprenderemos sobre <strong>Redes Wifi publicas y VPN</strong>. ¡Mantente alerta!</p>
+        
+        <h2>📡 Uso Seguro de Redes Wi-Fi Públicas y VPNs: Riesgos y Protección</h2>
+
+        <p>Las redes Wi-Fi públicas (cafés, aeropuertos, hoteles) son peligrosas: hackers pueden robar tus datos si no te proteges. 
+        Una VPN es tu mejor escudo. Aquí te explicamos cómo navegar seguro.</p>
+
+
+        <h2>⚠️ Riesgos de las Wi-Fi Públicas</h2>
+        <p>
+            <ol>
+                <li>👤 Ataque "Man-in-the-Middle" (MitM)</li>
+                <ul><li>Un hacker intercepta tu conexión y ve todo lo que haces: contraseñas, mensajes, tarjetas de crédito.</li></ul>
+                <ul><li>Ejemplo: Inicias sesión en tu banco en un café, pero un atacante captura tus credenciales.</li></ul>
+                
+                <li>📶 Redes Falsas ("Evil Twin")</li>
+                <ul><li>Crean un Wi-Fi con nombre similar al legítimo (ej: "Starbucks_Gratis" en lugar de "Starbucks_Free").</li></ul>
+                <ul><li>Ejemplo: Te conectas a "Hotel_Melia_WiFi" (falso) y todo tu tráfico pasa por el hacker.</li></ul>
+
+                <li>🦠 Malware en la Red</li>
+                <ul><li>Algunos hackers inyectan virus en dispositivos conectados a la misma red.</li></ul>
+            </ol>
+        </p>
+
+        <h2>🛡️ Cómo Protegerse en Wi-Fi Públicas</h2>
+
+        <ol>
+            <li>✅ Evita Acciones Sensibles</li>
+            <li>✅ Verifica que la Web sea HTTPS</li>
+            <li>✅ Activa el "Firewall" y Desactiva el Compartir Archivos</li>
+            <li>✅ Olvida la Red después de Usarla</li>
+        </ol>
+
+         <h2>📋 Comparación: Conectar sin VPN vs. Con VPN</h2>
+         <table>
+                    <thead>
+                      <tr>
+                        <th>Situación</th>
+                        <th>❌ Sin VPN</th>
+                        <th>✅ Con VPN</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Navegación en HTTP</td>
+                        <td>Datos visibles para hackers</td>
+                        <td>Tráfico encriptado (ilegible)</td>
+                      </tr>
+                      <tr>
+                        <td>Inicio de sesión en redes sociales</td>
+                        <td>Credenciales pueden ser robadas</td>
+                        <td>Información protegida</td>
+                      </tr>
+                      <tr>
+                        <td>Transacciones bancarias</td>
+                        <td>Riesgo extremo (robos financieros)</td>
+                        <td>Conexión segura</td>
+                      </tr>
+                        <tr>
+                        <td>Descarga de archivos</td>
+                        <td>Posible malware</td>
+                        <td>Menor riesgo (pero no 100% seguro)</td>
+                      </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                  <h3>🚨 Ejemplo de Ataque en Wi-Fi Público</h3>
+
+                  <p>Escenario:</p>
+                  <ul>
+                    <li>Te conectas a "McDonald's_WiFi" (falsa).</li>
+                    <li>Hackers redirigen tu acceso a facebook.com a una página clonada.</li>
+                    <li>Introduces tu usuario y contraseña... ¡Robados!</li>
+
+                    <p>Solucion:</p>
+                    <p>✔ Usa VPN para evitar redirecciones maliciosas.</p>
+                    <p>✔ Revisa siempre la URL (¿es https://facebook.com?).</p>
+                    <img 
+                        src="./assest/prev3.jpg"
+                        alt="prev"
+                        id="prevPreview"
+                        class="img_phishing"
+                    />
+                  </ul>
+                  <div class="tip">  
+            <h2>💡 Consejos </h2>
+            <ul>
+                <li>No uses redes públicas para teletrabajo (si manejas datos confidenciales).</li>
+                <li>Configura tu móvil como "hotspot" si necesitas seguridad urgente.</li>
+                <li>Actualiza tu sistema (parches de seguridad protegen contra exploits).</li>
+       
+            </ul>
+            </div>
+        <h3>📢 Recuerda:</h3>  
+        <p>Si sospechas de un correo, <a href="mailto:sistemas@lastra.com.co" target="_blank">repórtalo aquí</a>.</p>  
+    </div>  
+    <div class="footer">  
+        <p>© 2025 [REPRESENTACIONES LASTRA SAS]. Todos los derechos reservados. Create by Juan Pablo Granja</p>  
+        <p><a href="#">Política de seguridad</a> | <a href="https://wa.me/3188846786" target="_blank">Contactar al area de TI</a></p>  
+    </div> 
+    <script>
+        function toggleTemas(mes) {
+            const temas = document.getElementById(mes);
+            const btn = document.querySelector(`.mes-btn[onclick="toggleTemas('${mes}')"]`);
+            
+            // Cerrar todos los demás acordeones
+            document.querySelectorAll('.botones-container').forEach(container => {
+                if (container.id !== mes) {
+                    container.style.display = 'none';
+                    const otherBtn = document.querySelector(`.mes-btn[onclick*="${container.id}"]`);
+                    otherBtn.classList.remove('active');
+                    otherBtn.querySelector('.mes-flecha').textContent = '▼';
+                }
+            });
+            
+            // Alternar el actual
+            if (temas.style.display === 'none' || !temas.style.display) {
+                temas.style.display = 'flex';
+                btn.classList.add('active');
+                btn.querySelector('.mes-flecha').textContent = '▲';
+            } else {
+                temas.style.display = 'none';
+                btn.classList.remove('active');
+                btn.querySelector('.mes-flecha').textContent = '▼';
+            }
+        }
+    </script>   
+</body>
+</html>

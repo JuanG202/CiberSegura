@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Seguridad TI</title>
+</head>  
+<body> 
+    <div class="header">  
+        <h2>TEMAS DE CIBERSEGURIDAD TI</h2>
+        
+        <!-- Sección de Temas por Meses con Acordeón CORREGIDA -->
+        <div class="meses-container">
+            <!-- Mayo -->
+            <div class="mes-item-container">
+                <button class="mes-btn" onclick="toggleTemas('mayo')">
+                    Temas de Mayo
+                    <span class="mes-flecha">▼</span>
+                </button>
+                <div class="botones-container" id="mayo" style="display:none;">
+                    <a href="./tarjeta.html" class="boton-tema">Phishing</a>
+                    <a href="./password.html" class="boton-tema">Contraseñas seguras</a>
+                </div>
+            </div>
+            
+            <!-- Junio -->
+            <div class="mes-item-container">
+                <button class="mes-btn" onclick="toggleTemas('junio')">
+                    Temas de Junio
+                    <span class="mes-flecha">▼</span>
+                </button>
+                <div class="botones-container" id="junio" style="display:none;">
+                    <a href="./enlaces.html" class="boton-tema">Enlaces y archivos sospechosos</a>
+                    <a href="./seguro.html" class="boton-tema">Uso seguro del correo electrónico</a>
+                    <a href="./redes.html" class="boton-tema"> Redes Wifi publicas y VPN</a>
+                    <a href="./dispositivo.html" class="boton-tema">Seguridad en Dispositivos Móviles Corporativos</a>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="content">  
+        <h2>¡Hola Equipo😁!</h2>  
+        <p>Esta semana aprenderemos sobre <strong>Enlaces y archivos sospechosos</strong>. ¡Mantente alerta!</p>
+        
+        <h2>🔗 Enlaces y archivos sospechosos: Cómo verificar antes de hacer clic o descargar</h2>
+
+        <p>Los ciberdelincuentes usan enlaces falsos y archivos maliciosos para robar información o infectar dispositivos. 
+            Aprende a identificarlos y protegerte.</p> <br>
+        
+        <h2>🚩 Señales de un enlace sospechoso</h2>
+        <p>
+            <p> <strong>🔍 ¿Cómo detectar un enlace fraudulento?</strong></p>
+            <ol>
+                <li>Dominio extraño o mal escrito</li>
+                <p>Ejemplo legítimo: https://www.amazon.com <br>
+                   Ejemplo falso: http://www.amaz0n-login.com (cambia una letra o añade palabras).</p>
+                
+                <li>URL acortada o enmascarada</li>
+                <p>Herramientas como Bit.ly ocultan el destino real.<br> Verifica con: <br>
+                    <a href="https://www.unshorten.it/">https://www.unshorten.it/</a><br>
+                    <a href="https://checkshorturl.com/">https://checkshorturl.com/</a>  
+                    </p>
+                
+                <li>Protocolo inseguro (HTTP en lugar de HTTPS)</li>
+                <p>Siempre revisa que la URL empiece con https:// (la "s" indica cifrado).</p>
+                
+                <li>Texto del enlace no coincide con la URL</li>
+                <p>Pasa el cursor sobre el enlace (sin hacer clic) para ver la dirección real.<br>
+                    Ejemplo: <br>
+                    <strong>Texto:</strong> https://tu-banco.com/actualizar <br>
+                    <strong>URL real:</strong> http://phishing-site.com/robo-datos</p>
+
+                <li>Solicitud de credenciales en páginas no oficiales</li>
+                <p>Bancos, Netflix o PayPal nunca piden datos por correo o enlaces externos.</p>
+            </ol>
+        </p>
+
+        <h2>📁 Archivos sospechosos: Riesgos y verificación</h2>
+        <p>
+            <p><strong>⚠️ Extensiones peligrosas (nunca descargues si no las esperas):</strong></p>
+            <ul>
+                <li>Ejecutables: .exe, .bat, .msi, .scr (pueden instalar malware).</li>
+                <li>Macros: .docm, .xlsm (archivos de Office con código malicioso).</li>
+                <li>Comprimidos: .zip, .rar (a veces ocultan virus).</li>
+            </ul>
+            <h2>✅ Cómo verificar un archivo antes de abrirlo:</h2>
+            <p>
+                <ol>
+                    <li>Analízalo con herramientas gratuitas:</li>
+                        <a href="https://www.virustotal.com/gui/home/upload">VirusTotal</a>
+                    <li>Verifica el remitente:</li>
+                    <p>¿Esperabas este archivo? ¿El correo viene de un contacto confiable?</p>
+                    <li>Contraseña para descomprimir:</li>
+                    <p>Si te piden una contraseña en un archivo inesperado, no la introduzcas.</p>
+                </ol>
+            </p>
+        </p>
+        <h2>📋 Comparación: Enlaces/archivos seguros vs. sospechosos</h2>
+                <table>
+                    <thead>
+                      <tr>
+                        <th>Aspecto</th>
+                        <th>Seguro</th>
+                        <th>Sospechoso</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Dominio</td>
+                        <td>https://www.paypal.com</td>
+                        <td>http://paypal-actualizar.com</td>
+                      </tr>
+                      <tr>
+                        <td>Enlace en correo</td>
+                        <td>Coincide con el texto (ej: Iniciar sesión en PayPal)</td>
+                        <td>Texto genérico ("Haz clic aquí")</td>
+                      </tr>
+                      <tr>
+                        <td>Archivo adjunto</td>
+                        <td>.pdf esperado (ej: factura)</td>
+                        <td>.exe o .docm inesperado</td>
+                      </tr>
+                      <tr>
+                        <td>Contexto</td>
+                        <td>Correo solicitado (ej: confirmación de compra)</td>
+                        <td>Mensaje urgente ("Actualiza ya tu cuenta")</td>
+                      </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+
+        <div class="tip">  
+            <h2>🔐 Consejos para evitar riesgos</h2>  
+            <ul>  
+                <li>✔ Nunca hagas clic directamente: Escribe la URL manualmente en el navegador.</li>  
+                <li>✔ Usa herramientas de análisis: Como VirusTotal para archivos desconocidos.</li>  
+                <li>✔ Mantén tu antivirus activado: Y actualizado.</li>
+            </ul>  
+            <p>Si sospechas que has sido víctima de phishing, cambia tus contraseñas y contacta al area de TI de inmediato.</p>
+        </div>  
+
+        <h3>🚨 Ejemplo práctico de phishing con enlace falso: </h3>  
+        <p>"Estimado cliente, su cuenta de Netflix será suspendida. Actualice sus datos aquí: <br> <a href="https://netflix-actualizar.com">https://netflix-actualizar.com</a></p>
+        <p>¿Cómo detectar el fraude?</p>
+        <ol>
+            <li>El dominio no es netflix.com.</li>
+            <li>El mensaje crea urgencia innecesaria.</li>
+            <li>Netflix nunca pide datos por correo.</li>
+        </ol>
+        <p><strong>Acción correcta:</strong></p>
+        <li>Abre Netflix directamente en tu navegador (sin usar el enlace del correo).</li>
+        
+        
+        <img 
+        src="./assest/prev2.jpg"
+        alt="prev"
+        id="prevPreview"
+        class="img_phishing"
+        />
+
+        <h3>📢 Recuerda:</h3>  
+        <p>Si sospechas de un correo, <a href="mailto:sistemas@lastra.com.co" target="_blank">repórtalo aquí</a>.</p>  
+    </div>  
+    <div class="footer">  
+        <p>© 2025 [REPRESENTACIONES LASTRA SAS]. Todos los derechos reservados. Create by Juan Pablo Granja</p>  
+        <p><a href="#">Política de seguridad</a> | <a href="https://wa.me/3188846786" target="_blank">Contactar al area de TI</a></p>  
+    </div> 
+    <script>
+        function toggleTemas(mes) {
+            const temas = document.getElementById(mes);
+            const btn = document.querySelector(`.mes-btn[onclick="toggleTemas('${mes}')"]`);
+            
+            // Cerrar todos los demás acordeones
+            document.querySelectorAll('.botones-container').forEach(container => {
+                if (container.id !== mes) {
+                    container.style.display = 'none';
+                    const otherBtn = document.querySelector(`.mes-btn[onclick*="${container.id}"]`);
+                    otherBtn.classList.remove('active');
+                    otherBtn.querySelector('.mes-flecha').textContent = '▼';
+                }
+            });
+            
+            // Alternar el actual
+            if (temas.style.display === 'none' || !temas.style.display) {
+                temas.style.display = 'flex';
+                btn.classList.add('active');
+                btn.querySelector('.mes-flecha').textContent = '▲';
+            } else {
+                temas.style.display = 'none';
+                btn.classList.remove('active');
+                btn.querySelector('.mes-flecha').textContent = '▼';
+            }
+        }
+    </script> 
+</body>  
+</html>  
