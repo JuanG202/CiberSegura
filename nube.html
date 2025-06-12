@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Seguridad TI</title>
+</head>  
+<body>  
+    <div class="header">
+        <img  
+            src="./assest/lastra-sinfondo.png"
+            class="logo"
+            /> 
+        <h2>TEMAS DE CIBERSEGURIDAD TI</h2>
+        
+        <!-- Sección de Temas por Meses con Acordeón CORREGIDA -->
+        <div class="meses-container">
+            <!-- Junio -->
+            <div class="mes-item-container">
+                <button class="mes-btn" onclick="toggleTemas('junio')">
+                    Temas de Junio
+                    <span class="mes-flecha">▼</span>
+                </button>
+                <div class="botones-container" id="junio" style="display:none;">
+                    <a href="./enlaces.html" class="boton-tema">Enlaces y archivos sospechosos</a>
+                    <a href="./seguro.html" class="boton-tema">Uso seguro del correo electrónico</a>
+                    <a href="./redes.html" class="boton-tema"> Redes Wifi publicas y VPN</a>
+                    <a href="./dispositivo.html" class="boton-tema">Seguridad en Dispositivos Móviles Corporativos</a>
+                </div>
+            </div>
+            <!-- Julio -->
+            <div class="mes-item-container">
+                <button class="mes-btn" onclick="toggleTemas('julio')">
+                    Temas de Julio
+                    <span class="mes-flecha">▼</span>
+                </button>
+                <div class="botones-container" id="julio" style="display:none;">
+                    <a href="./actualizaciones.html" class="boton-tema">Seguridad en Actualizaciones de Software</a>
+                    <a href="./nube.html" class="boton-tema">Seguridad en la Nube: Uso Empresarial y Buenas Prácticas</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="content">  
+        <h2>¡Hola Equipo😁!</h2>  
+        <p>Esta semana aprenderemos sobre <strong>Seguridad en la Nube: Uso Empresarial y Buenas Prácticas</strong>. ¡Mantente alerta!</p>
+        
+        <h2>¿Qué es la Nube y Cómo se Usa en la Empresa?🤔</h2>
+        <p>La nube es un servicio de almacenamiento remoto donde los archivos no se guardan en tu computadora,
+           sino en servidores externos (ej: Google, Microsoft, Amazon).</p>
+        <ul>
+            <p>✔ Almacenamiento compartido: Equipos trabajan en documentos sin enviar archivos por correo.</p>
+            <p>✔ Copia de seguridad (backup): Recuperación ante pérdida de datos (ransomware, fallos de hardware).</p>
+            <p>✔ Trabajo remoto: Acceso a archivos desde cualquier lugar con internet.</p>
+            <p>✔ Colaboración en tiempo real: Edición simultánea en Google Docs, Excel Online, etc.</p>
+        </ul>
+
+        <h2>🛡️ Buenas Prácticas al Usar Google Drive, OneDrive, Dropbox</h2>
+        <ol>
+            <li><strong>🔒 Activa la Autenticación en Dos Pasos (2FA)</strong></li>
+            <ul>
+                <li style="font-weight: normal;">Evita accesos no autorizados si roban tu contraseña.</li>
+            </ul>
+
+            <li><strong>📂 Usa Carpetas con Permisos Específicos</strong></li>
+            <p> <strong> Ejemplo:</strong></p>
+            <ul>
+            <li style="font-weight: normal;"> Carpeta "Confidencial": Solo acceso para el equipo directivo.</li>
+            <li style="font-weight: normal;"> Carpeta "Proyectos": Edición permitida solo para el departamento correspondiente.</li>
+            </ul>
+            
+            <li><strong>🗄️ Cifra Archivos Sensibles Antes de Subirlos</strong></li>
+            <ul>
+            <li style="font-weight: normal;"> Herramientas: 7-Zip (con contraseña), Cryptomator (cifrado automático).</li>
+            <li style="font-weight: normal;"> Ejemplo: Un archivo contratos.7z protegido con contraseña antes de subirlo a la nube.</li>
+            </ul>
+            
+            <li><strong>🚫 Evita Sincronizar Todo Automáticamente</strong></li>
+            <ul>
+            <li style="font-weight: normal;"> Selecciona solo las carpetas esenciales para reducir riesgos.</li>
+            </ul>
+
+            <li><strong>📝 Monitorea la Actividad Reciente</strong></li>
+            <ul>
+            <li style="font-weight: normal;"> Revisa quién ha accedido o modificado archivos (disponible en Google Drive, Dropbox Business).</li>
+            </ul>
+        </ol>
+
+        
+        <h2>⚠️ Riesgos de Compartir Archivos Sin Control</h2>
+        <ol>
+            <li><strong>🔗 Enlaces Públicos Accesibles para Cualquiera</strong></li>
+            <ul>
+                <li style="font-weight: normal;">Ejemplo: Si compartes un enlace <strong>drive.google.com/xyz</strong> sin restricciones, cualquiera que lo tenga puede ver/descargar el archivo.</li>
+            </ul>
+
+            <li><strong>📤 Reenvío de Archivos por Parte de Empleados</strong></li>
+            <ul>
+            <li style="font-weight: normal;"> Un colaborador comparte accidentalmente una carpeta con un competidor.</li>
+            </ul>
+            
+            <li><strong>🕵️‍♂️ Exposición por Enlaces Olvidados</strong></li>
+            <ul>
+            <li style="font-weight: normal;"> Archivos compartidos hace años siguen activos y son descubiertos en búsquedas de Google.</li>
+            </ul>
+            
+            <li><strong>💻 Dispositivos Perdidos o Robados con Sincronización Activa</strong></li>
+            <ul>
+            <li style="font-weight: normal;"> Si un empleado pierde su laptop con Dropbox instalado, los archivos pueden caer en manos equivocadas.</li>
+            </ul>
+        </ol>
+
+        <h2>📋 Comparación: Uso Seguro vs. Inseguro de la Nube</h2>
+                <table>
+                    <thead>
+                      <tr>
+                        <th>Aspecto</th>
+                        <th>✅ Uso Seguro</th>
+                        <th>❌ Uso Inseguro</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Permisos de archivos</td>
+                        <td>Solo personas específicas (ej: equipo de contabilidad)</td>
+                        <td>Enlace público "Cualquiera con el enlace puede ver"</td>
+                      </tr>
+                      <tr>
+                        <td>Contraseñas</td>
+                        <td>2FA activado + contraseña fuerte</td>
+                        <td>Contraseña débil o sin 2FA</td>
+                      </tr>
+                      <tr>
+                        <td>Cifrado</td>
+                        <td>Archivos sensibles cifrados antes de subir</td>
+                        <td>Subidos en texto plano (sin protección)</td>
+                      </tr>
+                      <tr>
+                        <td>Monitoreo</td>
+                        <td>Alertas por acceso sospechoso</td>
+                        <td>Sin revisión de actividad</td>
+                      </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+
+        <h3>🚨 Ejemplos de Filtraciones por Mala Configuración </h3>  
+        <ol>
+            <li style="font-weight: normal;">Empresa X: Un empleado compartió un enlace público de Google Drive con datos de clientes. Apareció en resultados de Google.</li>
+            <li style="font-weight: normal;">Hospital Y: Subieron registros médicos a Dropbox sin cifrar y fueron hackeados.</li>
+        </ol>
+
+        <h3>📢 Caso práctico </h3>
+        <P><strong>Problema:</strong></P>
+        <ul>
+            <li>Un empleado compartió Informe-Financiero-2024.xlsx con un enlace público.</li>
+        </ul>
+        <P><strong>Solucion:</strong></P>
+        <ol>
+            <li>Cambia el permiso a "Solo personas específicas".</li>
+            <li>Activa el historial de versiones (por si hubo descargas no autorizadas).</li>
+            <li>Notifica al equipo para evitar futuros errores.</li>
+        </ol>
+        <div class="tip">  
+        <h2>💡 Consejos Clave para Empresas</h2>  
+            <ul>  
+                <li>✔ Realiza auditorías trimestrales de permisos y enlaces compartidos.</li>  
+                <li>✔ Elimina archivos obsoletos y revoca accesos de ex-empleados.</li>  
+                <li>✔ Usa soluciones empresariales (Google Workspace, Microsoft 365) con control granular.</li>
+            </ul>
+        </div>
+        <h3>📝 Cuéntanos qué aprendiste</h3>
+          <p>Por favor diligencia el siguiente formulario para reforzar lo aprendido sobre <strong> Seguridad en la Nube: Uso Empresarial y Buenas Prácticas.</strong></p>
+          
+
+        <h3>📢 Recuerda:</h3>  
+        <p>Si sospechas de un correo, <a href="mailto:sistemas@lastra.com.co" target="_blank">repórtalo aquí</a>.</p>  
+    </div>  
+    
+    <div class="footer">  
+        <p>© 2025 REPRESENTACIONES LASTRA SAS. Todos los derechos reservados. Create by Juan Pablo Granja</p>  
+        <p><a href="#">Política de seguridad</a> | <a href="https://wa.me/573188846786" target="_blank">Contactar al área de TI</a></p>  
+    </div>  
+
+    <script>
+        function toggleTemas(mes) {
+            const temas = document.getElementById(mes);
+            const btn = document.querySelector(`.mes-btn[onclick="toggleTemas('${mes}')"]`);
+            
+            // Cerrar todos los demás acordeones
+            document.querySelectorAll('.botones-container').forEach(container => {
+                if (container.id !== mes) {
+                    container.style.display = 'none';
+                    const otherBtn = document.querySelector(`.mes-btn[onclick*="${container.id}"]`);
+                    otherBtn.classList.remove('active');
+                    otherBtn.querySelector('.mes-flecha').textContent = '▼';
+                }
+            });
+            
+            // Alternar el actual
+            if (temas.style.display === 'none' || !temas.style.display) {
+                temas.style.display = 'flex';
+                btn.classList.add('active');
+                btn.querySelector('.mes-flecha').textContent = '▲';
+            } else {
+                temas.style.display = 'none';
+                btn.classList.remove('active');
+                btn.querySelector('.mes-flecha').textContent = '▼';
+            }
+        }
+    </script>
+</body>  
+</html>
