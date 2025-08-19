@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Seguridad TI</title>
+</head>  
+<body>  
+    <div class="header">
+        <img  
+            src="../assest/lastra-sinfondo.png"
+            class="logo"
+            /> 
+        <h2>TEMAS DE CIBERSEGURIDAD TI</h2>
+        
+        <!-- Sección de Temas por Meses con Acordeón CORREGIDA -->
+        <div class="meses-container">
+            <!-- Julio -->
+            <div class="mes-item-container">
+                <button class="mes-btn" onclick="toggleTemas('julio')">
+                    Temas de Julio
+                    <span class="mes-flecha">▼</span>
+                </button>
+                <div class="botones-container" id="julio" style="display:none;">
+                    <a href="../actualizaciones.html" class="boton-tema">Seguridad en Actualizaciones de Software</a>
+                    <a href="../nube.html" class="boton-tema">Seguridad en la Nube: Uso Empresarial y Buenas Prácticas</a>
+                    <a href="../teletrabajo.html" class="boton-tema">Ciberseguridad en el Teletrabajo</a>
+                    <a href="../privacidad.html" class="boton-tema"> Privacidad y protección de datos</a>
+                </div>
+            </div>
+            <!-- Agosto -->
+            <div class="mes-item-container">
+                <button class="mes-btn" onclick="toggleTemas('agosto')">
+                    Temas de Agosto
+                    <span class="mes-flecha">▼</span>
+                </button>
+                <div class="botones-container" id="agosto" style="display:none;">
+                    <a href="./tendencia.html" class="boton-tema">Tendencias y amenazas emergentes</a>
+                    <a href="./politicas.html" class="boton-tema">Políticas y normativas internas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">  
+        <h2>¡Hola Equipo😁!</h2>  
+        <p>Esta semana aprenderemos sobre <strong>Tendencias y amenazas emergentes</strong>. ¡Mantente alerta!</p>
+
+        <h2>🔮 Tendencias y Amenazas Emergentes en Ciberseguridad </h2>
+        <p>Los ciberataques evolucionan rápidamente. Estas son las principales amenazas y tendencias en protección que toda empresa y usuario debe conocer:</p>
+
+        <h2>🚨 Amenazas Emergentes</h2>
+        <ol>
+            <li><strong>IA Generativa en Ciberataques</strong></li>
+            <p><strong> Qué es: Hackers usan ChatGPT, WormGPT y herramientas similares para:</strong></p>
+            <ul>
+            <li style="font-weight: normal;"> Crear phishing hiperpersonalizado (sin errores gramaticales).</li>
+            <li style="font-weight: normal;"> Generar malware polimórfico (que cambia su código para evadir antivirus).</li>
+            <p><strong>Ejemplo:</strong> Correos falsos de RRHH con ofertas de trabajo, redactados por IA.</p>
+            </ul>
+
+            <li><strong>Ataques a Cadenas de Suministro</strong></li>
+            <ul>
+            <li style="font-weight: normal;"> <strong>Cómo funciona:</strong> Infectan software legítimo (ej: actualizaciones de proveedores) para atacar a miles de empresas.</li>
+            <li style="font-weight: normal;"> <strong>Caso real:</strong> Ataque a SolarWinds (2020) comprometió datos gubernamentales.</li>
+            </ul>
+
+            <li><strong>Secuestro de IA (Model Poisoning)</strong></li>
+            <ul>
+            <li style="font-weight: normal;"> <strong>Novedad:</strong> Hackers "envenenan" modelos de IA con datos falsos para manipular sus resultados.</li>
+            </ul>
+            <p><strong>Ejemplo:</strong> Un chatbot bancario que da información errónea sobre transferencias.</p>
+
+            <li><strong>Deepfakes para Fraudes</strong></li>
+            <ul>
+            <li style="font-weight: normal;"> <strong>Técnica:</strong> Usan audio/video falsos de ejecutivos para autorizar transferencias fraudulentas.</li>
+            <li style="font-weight: normal;"> <strong>Estadística:</strong> +500% de ataques por deepfake en 2023 (Forrester Research).</li>
+            </ul>
+
+            <li><strong>Ransomware 2.0</strong></li>
+            <p><strong> Nuevas tácticas:</strong></p>
+            <ul>
+            <li style="font-weight: normal;"> <strong>Doble extorsión: </strong> Roban datos antes de cifrarlos y amenazan con filtrarlos.</li>
+            <li style="font-weight: normal;"> <strong>Ataques a backups: </strong> Eliminan copias de seguridad para impedir la recuperación.</li>
+            </ul>
+        </ol>
+
+        <h2>🛡️ Tendencias en Protección</h2>
+
+        <ol>
+            <li><strong>Seguridad Basada en IA</strong></li>
+            <p><strong> Herramientas:</strong></p>
+            <ul>
+            <li style="font-weight: normal;"><strong>Microsoft Security Copilot:</strong> Analiza amenazas en tiempo real con IA.</li>
+            <li style="font-weight: normal;"><strong> Darktrace: </strong> Detecta comportamientos anómalos en redes.</li>
+            </ul>
+
+            <li><strong>Cifrado Post-Cuántico</strong></li>
+            <ul>
+            <li style="font-weight: normal;"><strong>Por qué importa:</strong> Las computadoras cuánticas podrán romper el cifrado actual en unos años.</li>
+            <li style="font-weight: normal;"><strong> Solución: </strong> Empresas como Google ya prueban algoritmos resistentes a cuánticos.</li>
+            </ul>
+        </ol>
+
+        
+        <h2>🔍 Caso Práctico: Ataque con Deepfake</h2>
+
+        <p><strong>Situación:</strong></p>
+        <ul>
+            <li>Un empleado de finanzas recibe una llamada del "CEO" (voz generada por IA) pidiendo una transferencia urgente.</li>
+            <li>La voz es idéntica y menciona detalles internos (robados previamente).</li>
+        </ul>
+
+        <p><strong>Cómo prevenirlo:</strong></p>
+        <ul>
+            <li>✔ Protocolo de verificación: Siempre confirmar por otro canal (ej: mensaje cifrado).</li>
+            <li>✔ Capacitación: Entrenar a equipos en reconocer deepfakes (ej: voces sin pausas naturales).</li>
+        </ul>
+
+         <div class="tip">  
+        <h2>😇 CONSEJOS CLAVES</h2>  
+            <ul>  
+                <li>Actualiza tus defensas: Invierte en herramientas con IA (ej: CrowdStrike Falcon).</li>
+                <li>Prepárate para lo cuántico: Pide a tus proveedores de cifrado sus planes de migración.</li>
+                <li>Simula ataques: Haz ejercicios de phishing con IA para entrenar empleados.</li>
+            </ul>
+        </div>
+
+        <h3>📝 Cuéntanos qué aprendiste</h3>
+          <p>Por favor diligencia el siguiente formulario para reforzar lo aprendido sobre <strong> Tendencias y amenazas emergentes. </strong></p>
+
+        <a href="https://forms.office.com/r/w9yU0H0c3J" target="_blank" class="formulario">
+            Formulario de Tendencias y amenazas emergentes
+        </a>
+
+        
+        
+          <h3>📢 Recuerda:</h3>  
+        <p>Si sospechas de un correo, <a href="mailto:sistemas@lastra.com.co" target="_blank">repórtalo aquí</a>.</p>  
+            </div>  
+    
+        <div class="footer">  
+            <p>© 2025 REPRESENTACIONES LASTRA SAS. Todos los derechos reservados. Create by Juan Pablo Granja</p>  
+            <p><a href="#">Política de seguridad</a> | <a href="https://wa.me/573188846786" target="_blank">Contactar al área de TI</a></p>  
+        </div>  
+        <script>
+        function toggleTemas(mes) {
+            const temas = document.getElementById(mes);
+            const btn = document.querySelector(`.mes-btn[onclick="toggleTemas('${mes}')"]`);
+            
+            // Cerrar todos los demás acordeones
+            document.querySelectorAll('.botones-container').forEach(container => {
+                if (container.id !== mes) {
+                    container.style.display = 'none';
+                    const otherBtn = document.querySelector(`.mes-btn[onclick*="${container.id}"]`);
+                    otherBtn.classList.remove('active');
+                    otherBtn.querySelector('.mes-flecha').textContent = '▼';
+                }
+            });
+            
+            // Alternar el actual
+            if (temas.style.display === 'none' || !temas.style.display) {
+                temas.style.display = 'flex';
+                btn.classList.add('active');
+                btn.querySelector('.mes-flecha').textContent = '▲';
+            } else {
+                temas.style.display = 'none';
+                btn.classList.remove('active');
+                btn.querySelector('.mes-flecha').textContent = '▼';
+            }
+        }
+    </script>
+</body>  
+</html>

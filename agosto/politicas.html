@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Seguridad TI</title>
+</head>  
+<body>  
+    <div class="header">
+        <img  
+            src="../assest/lastra-sinfondo.png"
+            class="logo"
+            /> 
+        <h2>TEMAS DE CIBERSEGURIDAD TI</h2>
+        
+        <!-- Sección de Temas por Meses con Acordeón CORREGIDA -->
+        <div class="meses-container">
+            <!-- Julio -->
+            <div class="mes-item-container">
+                <button class="mes-btn" onclick="toggleTemas('julio')">
+                    Temas de Julio
+                    <span class="mes-flecha">▼</span>
+                </button>
+                <div class="botones-container" id="julio" style="display:none;">
+                    <a href="../actualizaciones.html" class="boton-tema">Seguridad en Actualizaciones de Software</a>
+                    <a href="../nube.html" class="boton-tema">Seguridad en la Nube: Uso Empresarial y Buenas Prácticas</a>
+                    <a href="../teletrabajo.html" class="boton-tema">Ciberseguridad en el Teletrabajo</a>
+                    <a href="../privacidad.html" class="boton-tema"> Privacidad y protección de datos</a>
+                </div>
+            </div>
+            <!-- Agosto -->
+            <div class="mes-item-container">
+                <button class="mes-btn" onclick="toggleTemas('agosto')">
+                    Temas de Agosto
+                    <span class="mes-flecha">▼</span>
+                </button>
+                <div class="botones-container" id="agosto" style="display:none;">
+                    <a href="./tendencia.html" class="boton-tema">Tendencias y amenazas emergentes</a>
+                    <a href="./politicas.html" class="boton-tema">Políticas y normativas internas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">  
+        <h2>¡Hola Equipo😁!</h2>  
+        <p>Esta semana aprenderemos sobre <strong>Políticas y normativas internas</strong>. ¡Mantente alerta!</p>
+
+        <h2>📜 Políticas y Normativas Internas: Política de Uso Aceptable de Recursos Tecnológicos</h2>
+        <p>Una Política de Uso Aceptable (AUP) define las reglas para el uso seguro y responsable de los recursos tecnológicos de una empresa (equipos, redes, software y datos). 
+            Su objetivo es proteger los activos digitales, evitar riesgos legales y garantizar la productividad.</p>
+
+        <h2>🔍 ¿Qué Debe Incluir una AUP?</h2>
+        <ol>
+            <li><strong> Alcance</strong></li>
+            <p><strong>¿A quién aplica?: Empleados, proveedores, visitas y cualquier persona que acceda a los sistemas de la empresa.</strong></p>
+            <p><strong>¿Qué cubre?</strong></p>
+            <ul>
+            <li style="font-weight: normal;"> Dispositivos corporativos (laptops, móviles).</li>
+            <li style="font-weight: normal;"> Redes internas y Wi-Fi.</li>
+            <li style="font-weight: normal;"> Correo electrónico y almacenamiento en la nube.</li>
+            <li style="font-weight: normal;"> Software y licencias.</li>
+            </ul>
+
+            <li><strong> Seguridad de Contraseñas</strong></li>
+
+            <p><strong>Requisitos mínimos:</strong></p>
+            <ul>
+            <li style="font-weight: normal;"> 12 caracteres (mayúsculas, minúsculas, números y símbolos).</li>
+            <li style="font-weight: normal;"> Cambio cada 90 días.</li>
+            <li style="font-weight: normal;"> Prohibido compartirlas o anotarlas en post-its.</li>
+            </ul>
+
+            <li><strong> Manejo de Datos Sensibles</strong></li>
+
+            <p><strong>Clasificación:</strong></p>
+            <ul>
+            <li style="font-weight: normal;"> Público: Manuales, folletos.</li>
+            <li style="font-weight: normal;"> Interno: Organigramas, políticas.</li>
+            <li style="font-weight: normal;"> Confidencial: Datos de clientes, nóminas.</li>
+            </ul>
+
+            <p><strong>Reglas:</strong></p>
+            <ul>
+            <li style="font-weight: normal;"> No enviar datos confidenciales por correo sin cifrar.</li>
+            <li style="font-weight: normal;"> Usar solo unidades de red o clouds autorizados.</li>
+            </ul>
+
+            <h2>📋 Ejemplo de Cláusulas Clave</h2>
+
+            <p>"El empleado acepta no utilizar los recursos tecnológicos para:</p>
+            <ul>
+                <li style="font-weight: normal;">Acceder, almacenar o distribuir material ilegal o ofensivo.</li>
+                <li style="font-weight: normal;">Instalar software no autorizado por el departamento de TI.</li>
+                <li style="font-weight: normal;">Compartir credenciales o permitir el acceso a terceros no autorizados."</li>
+            </ul>
+
+            <h2>🚨 Casos Reales de Incumplimiento</h2>
+
+            <li><strong> Empleado descarga malware:</strong></li>
+            <ul>
+            <li style="font-weight: normal;"> Un trabajador instaló un juego pirata en su laptop corporativa, infectando la red con ransomware. 
+                Resultado: Pérdida de datos y 72 horas de inactividad.</li>
+            </ul>    
+            
+            <li><strong> Fuga de datos por correo personal:</strong></li>
+            <ul>
+            <li style="font-weight: normal;"> Un colaborador envió una base de clientes a su Gmail personal. Consecuencia: 
+                Multa del 2% de la facturación anual por violación del GDPR.</li>
+            </ul> 
+
+        <div class="tip">  
+        <h2>📢 Ejemplo de Comunicado Interno</h2>
+        <p>"Recordamos que está prohibido:</p>  
+            <ul>  
+                <li>Conectar dispositivos USB no autorizados.</li>
+                <li>Usar ChatGPT para subir código o documentos confidenciales.</li>
+            </ul>
+        </div>
+
+        <h3>📝 Cuéntanos qué aprendiste</h3>
+          <p>Por favor diligencia el siguiente formulario para reforzar lo aprendido sobre <strong> Políticas y normativas internas.</strong></p>
+
+        <a href="https://forms.office.com/r/w9yU0H0c3J" target="_blank" class="formulario">
+            Formulario de Políticas y normativas internas
+        </a>
+
+        
+        
+          <h3>📢 Recuerda:</h3>  
+        <p>Si sospechas de un correo, <a href="mailto:sistemas@lastra.com.co" target="_blank">repórtalo aquí</a>.</p>  
+            </div>  
+    
+        <div class="footer">  
+            <p>© 2025 REPRESENTACIONES LASTRA SAS. Todos los derechos reservados. Create by Juan Pablo Granja</p>  
+            <p><a href="#">Política de seguridad</a> | <a href="https://wa.me/573188846786" target="_blank">Contactar al área de TI</a></p>  
+        </div>  
+        <script>
+        function toggleTemas(mes) {
+            const temas = document.getElementById(mes);
+            const btn = document.querySelector(`.mes-btn[onclick="toggleTemas('${mes}')"]`);
+            
+            // Cerrar todos los demás acordeones
+            document.querySelectorAll('.botones-container').forEach(container => {
+                if (container.id !== mes) {
+                    container.style.display = 'none';
+                    const otherBtn = document.querySelector(`.mes-btn[onclick*="${container.id}"]`);
+                    otherBtn.classList.remove('active');
+                    otherBtn.querySelector('.mes-flecha').textContent = '▼';
+                }
+            });
+            
+            // Alternar el actual
+            if (temas.style.display === 'none' || !temas.style.display) {
+                temas.style.display = 'flex';
+                btn.classList.add('active');
+                btn.querySelector('.mes-flecha').textContent = '▲';
+            } else {
+                temas.style.display = 'none';
+                btn.classList.remove('active');
+                btn.querySelector('.mes-flecha').textContent = '▼';
+            }
+        }
+    </script>
